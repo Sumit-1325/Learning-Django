@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+Details page
+{% endblock %}
+
+{% block content %}
+<h1 class="bg-red-100 text-3xl"> Welcome to Chai detail page</h1>
+<h3>{{chai.name}} - {{chai.type}} - {{chai.id}} </h3>
+<p>{{chai.description}}</p>
+
+{% endblock %}

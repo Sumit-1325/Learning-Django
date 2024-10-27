@@ -19,6 +19,6 @@ class chaivariety(models.Model):         #chaivariety creates structure for data
     image = models.ImageField(upload_to='chais/')
     date_added = models.DateTimeField(default=timezone.now) #date_added
     type = models.CharField(max_length=2, choices=CHAI_TYPE_CHOICES, default='PL')
-
+    description = models.TextField(default='no description')
     def __str__(self):
         return self.name
